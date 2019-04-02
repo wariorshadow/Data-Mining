@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>fullPage.js — Basic Demo</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+#menu .active a { color: #fff; background-color: #333;}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		menu: '#menu'
+	});
+});
+</script>
+</head>
+
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="page1" class="active"><a href="#page1">Population</a></li>
+	<li data-menuanchor="page2"><a href="#page2">Unemployment rate</a></li>
+	<li data-menuanchor="page3"><a href="#page3">Employment by sector</a></li>
+	<li data-menuanchor="page4"><a href="#page4">Infographics</a></li>
+</ul>
+
+<div id="dowebok">
+	<div class="section" align="center">
+		<div align="center">
+		<iframe src="https://chaminchuluun.github.io/DataMining/index.html" width="970px" height="550px" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="section">
+		<div class="slide">
+			<h3>Unemployment rate</h3>
+			<iframe src="https://plotdb.io/v/chart/14973" width="100%" height="500px" allowfullscreen="true" frameborder="0"></iframe>		
+		</div>
+		<div class="slide">
+			<iframe src="https://plotdb.io/v/chart/15006" width="100%" height="550px" allowfullscreen="true" frameborder="0"></iframe>	
+		</div>
+	</div>
+	<div class="section">
+		<div class="slide">
+			<iframe src="sectoremployment.html" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+		<div class="slide">
+			<iframe src="https://plot.ly/~Chaminchuluun/3.embed" width="90%" height="550px" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+	</div>
+	<div class="section">
+		<div class="slide">
+			<iframe src="https://my.visme.co/projects/y4yyvxrz-unemployment" width="100%" height="700px" align="center" allowfullscreen="true" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://chaminchuluun.github.io/DataMining/Unemployment.jpg" width="830px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://chaminchuluun.github.io/DataMining/piktochart.png" width = "830px" height="550px" frameborder="0"></iframe>
+		</div>		
+		<div class="slide" align="center">
+			<iframe src="https://chaminchuluun.github.io/DataMining/Unemployment550.jpg" width="220px" height="550px" frameborder="0"></iframe>
+			<iframe src="https://chaminchuluun.github.io/DataMining/piktochart550.jpg" width = "206px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://chaminchuluun.github.io/DataMining/Unemployment1000.jpg" width="420px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<iframe src="https://chaminchuluun.github.io/DataMining/piktochart1000.jpg" width = "395px" height="550px" frameborder="0"></iframe>
+		</div>
+		<div class="slide" align="center">
+			<a href="https://create.piktochart.com/output/25371502-mongolia">Click here to go to Piktochart</a>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
